@@ -1,0 +1,16 @@
+/node_modules/
+/vendor/
+/.env
+/*.log
+/*.lock
+/.npmrc
+/.netlify/
+
+/dist/
+
+/public/mix-manifest.json
+/public/favicon.ico
+/public/css/
+/public/fonts/
+/public/images/
+/public/js/

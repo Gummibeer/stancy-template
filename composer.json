@@ -1,0 +1,44 @@
+{
+    "name": "gummibeer/stancy-template",
+    "description": "Stancy Laravel template for quickstart",
+    "keywords": [
+        "laravel",
+        "astrotomic",
+        "stancy",
+        "gummibeer"
+    ],
+    "license": "proprietary",
+    "require": {
+        "php": "^7.2",
+        "astrotomic/stancy": "^0.5.1",
+        "fideloper/proxy": "^4.0",
+        "laravel/framework": "^6.2"
+    },
+    "require-dev": {
+        "facade/ignition": "^1.4",
+        "nunomaduro/collision": "^3.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ]
+    }
+}
