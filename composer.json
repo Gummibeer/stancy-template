@@ -1,5 +1,6 @@
 {
     "name": "gummibeer/stancy-template",
+    "type": "project",
     "description": "Stancy Laravel template for quickstart",
     "keywords": [
         "laravel",
